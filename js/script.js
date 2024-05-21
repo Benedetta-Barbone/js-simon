@@ -15,8 +15,16 @@ let numeriCasuali = [];
         numeriCasualiContainer.appendChild(numeroElemento);//e al div container appendiamo numero i div creati
     });
     
+    function chiediNumeri(numeriOriginali) {
+        const numeriInseriti = []; // creiamo un array dove inseriamo i numeri che digita l'utente
+        for (let i = 0; i < 5; i++) {
+            const numero = parseInt(prompt('Inserisci un numero dei 5 che ricordi'), 10);
+            numeriInseriti.push(numero);
+        }
+    }
 
-
-
-
+    setTimeout(function() {
+        numeriCasualiContainer.innerHTML = ''; //svutiamo il container dopo 30 secondi
+        chiediNumeri(numeriCasuali); // Chiedere i numeri all'utente
+    }, 30000);
 
