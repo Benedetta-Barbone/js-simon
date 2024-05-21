@@ -6,13 +6,18 @@
 //            -allo scadere dei 30 secondi si crea un ciclo dove viene chiesto per 5 volte di inserire i numeri visti in           precedenza.
 
 
-const numeriCasuali = document.querySelector('div.numericasuali');
+let numeriCasualiContainer = document.querySelector('div.numericasuali');
 
-function generaNumeriRandom(){
+let numeriCasuali = [];
+
     for (index= 0; index < 5 ; index++){
-        const numRandom = Math.floor(Math.random() * max);
-    }
-}
+            const numbers = Math.floor(Math.random() * 100) + 1;  
+            numeriCasuali.push(numbers);
+        }
+
+    
+
+
 
 
 
